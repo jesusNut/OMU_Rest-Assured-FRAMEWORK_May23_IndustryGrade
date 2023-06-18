@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods" thread-count="5">
+    <listeners>
+        <listener
+                class-name="com.spotify.oauth2.listeners.MethodInterceptor"/>
+        <listener
+                class-name="com.spotify.oauth2.listeners.ExtentReportListener"/>
+    </listeners>
+    <test preserve-order="true" name="All Tests">
+        <classes>
+            <class name="spotify.oauth2.tests.PlaylistTests">
+                <methods>
+                    <include name="shouldBeAbleToCreatePlaylist"/>
+                    <include name="shouldBeAbleToGetAPlaylist"/>
+                    <include name="shouldBeAbleToUpdatePlaylistDetails"/>
+                    <include name="shouldNotBeAbleToCreatePlaylistWithoutName"/>
+                    <include name="shouldNotBeAbleToCreatePlaylistWithExpiredToken"/>
+                    <include name="shouldBeAbletoCreatePlaylist_addTrack"/>
+                    <include name="shouldBeAbleToCreateMutliplePlaylistsExcelDP"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
