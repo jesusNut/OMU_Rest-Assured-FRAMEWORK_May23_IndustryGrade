@@ -1,6 +1,22 @@
 
 
-This Framework uses Oauth2 authentication.
+This Framework uses Oauth2 authentication of Spotify Web API.
+---------------------------------------------------------------
+
+Pre-requisite:
+---------------------------------------------------------------
+
+Please replace the following fields (with your own data) in : ${PROJECT_ROOT}\src\test\resources\config\FrameworkConfig.properties
+
+a. client_id
+b. client_secret
+c. grant_type
+d. refresh_token
+e. spotifyUserID
+
+
+TEST CASES:
+---------------------------------------------------------------
 
 spotify.oauth2.tests.PlaylistTests.java containes the below Playlist API test cases automated:
 

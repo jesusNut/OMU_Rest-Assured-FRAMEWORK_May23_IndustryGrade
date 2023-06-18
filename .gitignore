@@ -40,3 +40,4 @@ build/
 ### Project Specific ###
 
 extent-test-output/
+.idea/
