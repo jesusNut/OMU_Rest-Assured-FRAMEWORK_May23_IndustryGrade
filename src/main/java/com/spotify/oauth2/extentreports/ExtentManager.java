@@ -10,7 +10,7 @@ public final class ExtentManager {
 
 	}
 
-	private static ThreadLocal<ExtentTest> exTest = new ThreadLocal<ExtentTest>();
+	private static final ThreadLocal<ExtentTest> exTest = new ThreadLocal<ExtentTest>();
 
 	 static ExtentTest getExtentTest() {
 

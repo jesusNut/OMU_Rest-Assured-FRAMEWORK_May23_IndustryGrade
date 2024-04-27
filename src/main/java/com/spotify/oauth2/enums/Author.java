@@ -12,7 +12,7 @@ package com.spotify.oauth2.enums;
  * @author Abhishek Bhardwaj-JesusNut
  * @version 1.0
  * @since 1.0
- * @see com.jesusnut.annotations.FrameworkAnnotation
+ * @see com.spotify.oauth2.annotations.FrameworkAnnotation
  */
 
 public enum Author {
